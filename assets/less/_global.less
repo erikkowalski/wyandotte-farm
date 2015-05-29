@@ -1,0 +1,408 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome/fontawesome-webfont.eot?v=#4.1.0");
+  src: url("../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=#4.1.0") format("embedded-opentype"),
+       url("../fonts/fontawesome/fontawesome-webfont.woff?v=#4.1.0") format("woff"),
+       url("../fonts/fontawesome/fontawesome-webfont.ttf?v=#4.1.0") format("truetype"),
+       url("../fonts/fontawesome/fontawesome-webfont.svg?v=#4.1.0#fontawesomeregular") format("svg");
+      font-weight: normal;
+      font-style: normal; }
+
+body {
+    margin-top: 120px;
+}
+
+a.cart-contents, .site-header-cart .widget_shopping_cart a {
+        color: @text-color;
+    }
+
+ a.cart-contents:hover, .site-header-cart .widget_shopping_cart a:hover {
+     color: @link-hover-color;
+ }
+
+.screen-reader-text {
+    display: none;
+}
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+  display: block; }
+
+.storefront-nav {
+    margin-top: 50px;
+    z-index: 900;
+    height: 20px;
+}
+
+.search input {
+    height: 30px;
+    border-style: none;
+    display: block;
+/*width: 100%;
+height: 34px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555555;
+background-color: #ffffff;
+background-image: none;
+border: 1px solid #cccccc;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    */
+}
+
+.search .search-field{
+    height: 32px;
+    padding-left: 10px;
+    width: 50%;
+}
+
+.search input {
+    width: 20%;
+    float: left;
+}
+
+
+.search .form-group {
+    margin-top: 10px;
+}
+
+
+.cart-btn {
+    max-width: 250px;
+    float: right;
+}
+
+
+
+/**
+ * General Layout
+ */
+@media screen and (min-width: 768px) {
+
+
+.site-header-cart {
+    padding-top: 20px;
+    margin-bottom: 0;
+
+}
+
+    .site-header-cart a {
+        margin-top: 5px;
+        padding-bottom: 20px;
+    }
+
+    .cart-contents {
+        padding: 0;
+    }
+
+    .widget_shopping_cart_content {
+        padding: 5px;
+        background: #f4f4f4;
+    }
+
+    .site-header-cart .cart-contents {
+        padding: 0;
+
+    }
+
+    .site-header-cart .widget_shopping_cart{}
+
+}
+
+
+/* --- Shopping Page ---*/
+.woocommerce-result-count {
+    display: block;
+    clear: both;
+    float: none;
+    padding-bottom: 0;
+}
+
+.woocommerce-ordering {
+    float: left;
+}
+
+
+
+/*----------- footer -----------*/
+
+footer {
+    padding-bottom: 2em;
+}
+
+footer p {
+    font-family: lato, sans-serif;
+    font-weight: 300;
+}
+
+.footer-logo{
+    margin-top: 6em;
+    text-align: center;
+
+}
+
+.footer-logo img {
+
+ max-width: 100%;
+}
+
+.content-info {
+	background:#f8f8f8;
+     background-image: url(../img/patterns/subtle_dots.png);
+    background-attachment: fixed;
+	margin-bottom:0;
+	border-top:20px solid #cbcbcb;
+}
+
+.content-info h3 {
+	letter-spacing:0.1em;
+	font-weight:400;
+}
+
+
+
+.content-info, .content-info p{
+	font-size:1.1em;
+}
+
+
+.content-info h3 {
+	font-size:1em;
+	text-transform:uppercase;
+	padding-bottom:0.5em;
+	border-bottom:1px solid #c4c4c4;
+}
+
+.content-info ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+
+footer .container > p {
+	letter-spacing:0.08em;
+	text-align:center;
+}
+
+.footer-bottom {
+}
+
+.copyright {
+    text-align: center;
+    padding: 3em 0 2em 0;
+}
+
+.blog-name {
+    font-size: 1.5em;
+    letter-spacing:0.02em;
+    padding-right: 10px;
+
+}
+
+.footer-tagline {
+    padding-right: 10px;
+}
+
+.author-copyright {
+   font-size: 1.5em;
+    letter-spacing: 0.05em;
+}
+
+
+/* add boostrap grid col-md-3 styling to footer widgets */
+
+.content-info .widget {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+
+@media (min-width: 768px) {
+.content-info .widget {
+    float: left;
+    width: 50%;
+  }
+
+  }
+
+@media (min-width: 992px) {
+.content-info .widget {
+		float: left;
+		width: 25%;
+	}
+} /* close media querie */
+
+/*---------------------------------
+MEDIA QUERIES FOR RESPONSIVE DESIGN
+------------------*/
+
+ /*
+					 ##
+			  ###    ##   ###
+				###  ## ####
+				 #########
+			 ##################
+			 ##################
+				  #######
+				 ##  ## ###
+			   ###   ##  ####
+					 ##
+*/
+
+/* -------- iPhone ---------- */
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+	body {
+    margin-top: 50px;
+}
+
+.statement{
+    padding: 10px;
+    }
+
+
+}/*    <--- Close iPhone --- */
+
+
+
+/* --- iPad --- */
+
+@media only screen
+and (min-device-width : 768px )
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+
+
+}/* <--- Close iPad --- */
+
+
+@media (min-width: 768px) {
+
+.contact {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+}
+
+
+/* -----------------///// @screen-sm-min /////-----------> */
+
+@media (min-width: 768px) and (max-width: 1000px) {
+
+    .home article {
+        min-height: 520px;
+    }
+
+
+}  /* <------ close 768px breakpoint///// @screen-sm-min /////-------*/
+
+
+ /*
+					 ##
+			  ###    ##   ###
+				###  ## ####
+				 #########
+			 ##################
+			 ##################
+				  #######
+				 ##  ## ###
+			   ###   ##  ####
+					 ##
+*/
+
+@media (min-width: 785px) {
+    .admin-bar .navbar {
+        margin-top: 30px;
+
+}
+
+    .admin-bar .storefront-nav {
+margin-top: 80px;
+    }
+
+    .carousel-caption h1 {
+    text-transform: uppercase;
+    font-size: 6em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    letter-spacing: 0.08em
+}
+
+    .carousel-caption .btn {
+        margin-bottom: 2em;
+}
+
+}
+
+/* -----------------///// @screen-lg-min /////-----------> */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+       .home article {
+        min-height: 540px;
+    }
+
+.carousel-caption h1 {
+    text-transform: uppercase;
+    font-size: 8em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    letter-spacing: 0.08em
+}
+
+    .carousel-caption .btn {
+        margin-bottom: 3em;
+}
+
+.contact {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+} /*-------- Close @screen-lg-min -------------*/
+
+
+
+/* -----------------///// @screen-lg-min /////-----------> */
+
+@media (min-width: 1200px) {
+
+   .carousel-caption h1 {
+    text-transform: uppercase;
+    font-size: 10em;
+    margin-bottom: 0.6em;
+    font-weight: 600;
+    letter-spacing: 0.08em
+}
+
+
+    .carousel-caption .btn {
+        margin-bottom: 2em;
+        font-size: 2em;
+        font-weight: 100;
+}
+
+.contact {
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+
+} /* <------ close 1200px breakpoint///// @screen-lg-min /////-------*/
+
